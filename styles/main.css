@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: #F8F8F8;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.search .saerch-icon {
+  padding-right: 25px;
+  filter: invert(15%) sepia(19%) saturate(752%) hue-rotate(207deg) brightness(96%) contrast(97%);
+}
+
+.top-slider {
+  padding: 0 25px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  height: 170px;
+  border-radius: 8px;
+  background-color: #ccc;
+}/*# sourceMappingURL=main.css.map */
