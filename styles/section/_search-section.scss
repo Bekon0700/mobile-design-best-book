@@ -1,0 +1,12 @@
+.search {
+    background-color: #F8F8F8;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .saerch-icon {
+        padding-right: 25px;
+        filter: invert(15%) sepia(19%) saturate(752%) hue-rotate(207deg) brightness(96%) contrast(97%);
+    }
+}

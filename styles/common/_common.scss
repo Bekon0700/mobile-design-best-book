@@ -1,0 +1,40 @@
+.top {
+    padding: 20px 25px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        color: #282637;
+        font-size: 22px;
+    }
+
+    .link {
+        color: #0067B8;
+        cursor: pointer;
+    }
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 25px;
+
+    .books-slider {
+        width: 100%;
+        overflow: hidden;
+        .swiper-wrapper {
+            .swiper-slide {
+                width: max-content;
+
+            }
+        }
+    }
+
+   .book-img {
+    width: 90px;
+    height: 130px;
+    border-radius: 8px;
+   }
+}

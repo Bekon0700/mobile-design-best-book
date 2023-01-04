@@ -5,34 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/main.css">
     <title>Rokomari Mobile</title>
 </head>
 
 <body>
     <div class="container">
+        <!-- search -->
         <div class="search">
             <img src="./assets/img/Vector.svg" alt="" class="saerch-icon">
         </div>
 
         <!-- slider top -->
-        <div class="swiper mySwiper top-slider">
+        <div class="swiper top-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">Slide 1</div>
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div>
             </div>
         </div>
+
+        <!-- Free Books -->
+        <div class="books">
+            <div class="top">
+                <p class="title">Free Books</p>
+                <p class="link">See All</p>
+            </div>
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Rectangle 33.png" alt="" class="book-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Rectangle 33.png" alt="" class="book-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Rectangle 29.png" alt="" class="book-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Rectangle 33.png" alt="" class="book-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Rectangle 33.png" alt="" class="book-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/Rectangle 33.png" alt="" class="book-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- categories -->
+        <div class="categories-section">
+            <p class="title">Catrgories</p>
+            <div class="swiper caterories-swiper">
+                <div class="swiper-wrapper popo">
+                    <div class="swiper-slide slider-container">
+                        <div class="category-item">
+                            <span class="category-img"></span>
+                            <p class="category-name">Motivation & Inspiration</p>
+                        </div>
+                        <div class="category-item">
+                            <span class="category-img"></span>
+                            <p class="category-name">Science</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-container">
+                        <div class="category-item">
+                            <span class="category-img"></span>
+                            <p class="category-name">Motivation & Inspiration</p>
+                        </div>
+                        <div class="category-item">
+                            <span class="category-img"></span>
+                            <p class="category-name">Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {});
-        console.log(swiper)
+        let swiperTop = new Swiper(".top-slider", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+        });
+        let swiperBooks = new Swiper(".books-slider", {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            // slidesPerGroup: 3,
+        });
+        let swiperCategories = new Swiper(".caterories-swiper", {
+            slidesPerView: 'auto',
+            // slidesPerGroup: 3,
+        });
     </script>
 </body>
 

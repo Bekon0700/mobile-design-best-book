@@ -7,6 +7,42 @@ body {
   box-sizing: border-box;
 }
 
+.top {
+  padding: 20px 25px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .title {
+  color: #282637;
+  font-size: 22px;
+}
+.top .link {
+  color: #0067B8;
+  cursor: pointer;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 25px;
+}
+.books .books-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.books .books-slider .swiper-wrapper .swiper-slide {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.books .book-img {
+  width: 90px;
+  height: 130px;
+  border-radius: 8px;
+}
+
 .search {
   background-color: #F8F8F8;
   height: 74px;
@@ -21,11 +57,53 @@ body {
 
 .top-slider {
   padding: 0 25px;
-  overflow: hidden;
 }
-
-.swiper-slide {
+.top-slider .swiper-slide {
   height: 170px;
   border-radius: 8px;
   background-color: #ccc;
+}
+
+.categories-section {
+  padding-left: 25px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.categories-section .title {
+  font-size: 22px;
+}
+
+.popo {
+  display: flex;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.category-item .category-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.category-item .category-name {
+  color: #616161;
+  font-size: 14px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
