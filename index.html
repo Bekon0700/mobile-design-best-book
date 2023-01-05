@@ -137,6 +137,42 @@
             </div>
         </div>
 
+        <!-- Top Authors -->
+        <div class="books">
+            <div class="top">
+                <p class="title">Top Authors</p>
+                <p class="link">See All</p>
+            </div>
+            <div class="swiper author-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide author-item">
+                        <img src="./assets/img/image 173.png" alt="" class="author-img">
+                        <p class="author-name">Beach Town</p>
+                    </div>
+                    <div class="swiper-slide author-item">
+                        <img src="./assets/img/image 174.png" alt="" class="author-img">
+                        <p class="author-name">Aurther James</p>
+                    </div>
+                    <div class="swiper-slide author-item">
+                        <img src="./assets/img/image 173.png" alt="" class="author-img">
+                        <p class="author-name">Beach Town</p>
+                    </div>
+                    <div class="swiper-slide author-item">
+                        <img src="./assets/img/image 174.png" alt="" class="author-img">
+                        <p class="author-name">Aurther James</p>
+                    </div>
+                    <div class="swiper-slide author-item">
+                        <img src="./assets/img/image 173.png" alt="" class="author-img">
+                        <p class="author-name">Beach Town</p>
+                    </div>
+                    <div class="swiper-slide author-item">
+                        <img src="./assets/img/image 174.png" alt="" class="author-img">
+                        <p class="author-name">Aurther James</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -149,6 +185,11 @@
         let swiperBooks = new Swiper(".books-slider", {
             slidesPerView: 'auto',
             spaceBetween: 10,
+            // slidesPerGroup: 3,
+        });
+        let swiperAuthor = new Swiper(".author-slider", {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
             // slidesPerGroup: 3,
         });
     </script>

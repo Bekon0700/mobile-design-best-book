@@ -132,4 +132,30 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.author-slider {
+  width: 100%;
+}
+
+.author-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.author-item .author-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.author-item .author-name {
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
