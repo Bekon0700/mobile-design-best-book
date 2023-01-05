@@ -1,0 +1,18 @@
+.treanding-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .trending-book-img {
+        height: 148px;
+        width: 102px;
+        border-radius: 4px;
+    }
+
+    .book-name {
+        width: 102px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
