@@ -32,12 +32,19 @@
         filter: invert(24%) sepia(98%) saturate(1664%) hue-rotate(189deg) brightness(96%) contrast(101%);
     }
 
+    
     .single-nav {
         display: flex;
         flex-direction: column;
         // justify-content: center;
         gap: 10px;
         align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        
+        .normal {
+            filter: invert(34%) sepia(0%) saturate(1652%) hue-rotate(163deg) brightness(100%) contrast(76%);
+        }
 
         .nav-icon {
             width: 18px;

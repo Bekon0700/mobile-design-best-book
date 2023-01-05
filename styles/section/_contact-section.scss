@@ -22,7 +22,7 @@
                 font-size: 16px;
                 text-align: center;
                 @include respondToScreen('mediumMobile') {
-                    font-size: 24px;
+                    font-size: 20px;
                 }
                 @include respondToScreen('largeMobile') {
                     font-size: 29px;
@@ -38,7 +38,7 @@
                 color: #616161;
 
                 @include respondToScreen('mediumMobile') {
-                    font-size: 16px;
+                    font-size: 15px;
                 }
                 @include respondToScreen('largeMobile') {
                     font-size: 18px;

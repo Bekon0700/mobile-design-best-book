@@ -10,14 +10,9 @@
 
 
     .author-img {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
-
-        @include respondToScreen('mediumMobile') {
-            width: 90px;
-            height: 90px;
-        }
     }
 
     .author-name {
@@ -29,7 +24,7 @@
         text-align: center;
 
         @include respondToScreen('mediumMobile') {
-            width: 90px;
+            width: 80px;
             font-size: 15px;
         }
     }

@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <div class="transition transition-active"></div>
+
     <div class="container">
         <!-- search -->
         <div class="search">
@@ -310,25 +312,25 @@
                 </div>
             </div>
         </div>
- 
+
         <!-- Navigation -->
         <div class="navigation">
-            <div class="single-nav active">
-                <img src="./assets/img/Vector.png" alt="" class="nav-icon">
+            <a href="home.html" class="single-nav">
+                <img src="./assets/img/Vector.png" alt="" class="nav-icon normal">
                 <p class="nav-name">Home</p>
-            </div>
-            <div class="single-nav">
+            </a>
+            <a href="category.html" class="single-nav">
                 <img src="./assets/img/Group.png" alt="" class="nav-icon">
                 <p class="nav-name">Category</p>
-            </div>
-            <div class="single-nav">
+            </a>
+            <a href="bookself.html" class="single-nav">
                 <img src="./assets/img/Vector 2.png" alt="" class="nav-icon">
                 <p class="nav-name">Bookself</p>
-            </div>
-            <div class="single-nav">
+            </a>
+            <a href="profile.html" class="single-nav">
                 <img src="./assets/img/user.png" alt="" class="nav-icon">
                 <p class="nav-name">Profile</p>
-            </div>
+            </a>
         </div>
 
     </div>
@@ -351,6 +353,10 @@
             // slidesPerGroup: 3,
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous">
+        </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

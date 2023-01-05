@@ -6,13 +6,13 @@
 
     .bestSelling-img {
         width: 128px;
-        height: 186px;
+        // height: 186px;
         border-radius: 6px;
 
-        @include respondToScreen('mediumMobile') {
-            width: 148px;
-            height: 188px;
-        }
+        // @include respondToScreen('mediumMobile') {
+        //     width: 148px;
+        //     height: 188px;
+        // }
     }
 
 

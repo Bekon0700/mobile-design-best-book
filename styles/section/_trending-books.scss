@@ -4,14 +4,14 @@
     gap: 5px;
 
     .trending-book-img {
-        height: 148px;
-        width: 102px;
+        // height: 148px;
+        // width: 102px;
         border-radius: 4px;
 
-        @include respondToScreen('mediumMobile') {
-            width: 122px;
-            height: 168px;
-        }
+        // @include respondToScreen('mediumMobile') {
+        //     width: 122px;
+        //     height: 168px;
+        // }
     }
 
     .book-name {
