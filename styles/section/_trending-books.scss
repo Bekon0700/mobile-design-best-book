@@ -7,6 +7,11 @@
         height: 148px;
         width: 102px;
         border-radius: 4px;
+
+        @include respondToScreen('mediumMobile') {
+            width: 122px;
+            height: 168px;
+        }
     }
 
     .book-name {
@@ -14,5 +19,10 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @include respondToScreen('mediumMobile') {
+            width: 122px;
+            font-size: 17px;
+        }
     }
 }

@@ -13,6 +13,11 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
+
+        @include respondToScreen('mediumMobile') {
+            width: 90px;
+            height: 90px;
+        }
     }
 
     .author-name {
@@ -22,5 +27,10 @@
         text-overflow: ellipsis;
         font-size: 12px;
         text-align: center;
+
+        @include respondToScreen('mediumMobile') {
+            width: 90px;
+            font-size: 15px;
+        }
     }
 }

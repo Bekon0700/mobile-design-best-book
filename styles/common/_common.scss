@@ -1,5 +1,5 @@
 .top {
-    padding: 20px 25px 0 0 ;
+    padding: 20px 25px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@
 
     .books-slider {
         width: 100%;
-        overflow: hidden;
+
         .swiper-wrapper {
             .swiper-slide {
                 width: max-content;
@@ -32,9 +32,23 @@
         }
     }
 
-   .book-img {
-    width: 90px;
-    height: 130px;
-    border-radius: 8px;
-   }
+    .book-img {
+        width: 90px;
+        height: 130px;
+        border-radius: 8px;
+
+        @include respondToScreen('mediumMobile') {
+            width: 110px;
+            height: 150px;
+        }
+        @include respondToScreen('largeMobile') {
+            width: 120px;
+            height: 160px;
+        }
+        @include respondToScreen('tablet') {
+            width: 130px;
+            height: 170px;
+        }
+
+    }
 }

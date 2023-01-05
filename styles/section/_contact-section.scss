@@ -14,15 +14,38 @@
             flex-direction: column;
             gap: 7px;
 
+            @include respondToScreen('mediumMobile') {
+                gap: 10px;
+            }
+
             .publish {
                 font-size: 16px;
                 text-align: center;
+                @include respondToScreen('mediumMobile') {
+                    font-size: 24px;
+                }
+                @include respondToScreen('largeMobile') {
+                    font-size: 29px;
+                }
+                @include respondToScreen('tablet') {
+                    font-size: 33px;
+                }
             }
 
             .author {
                 font-size: 13px;
                 text-align: center;
                 color: #616161;
+
+                @include respondToScreen('mediumMobile') {
+                    font-size: 16px;
+                }
+                @include respondToScreen('largeMobile') {
+                    font-size: 18px;
+                }
+                @include respondToScreen('tablet') {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -30,6 +53,7 @@
             color: #fff;
             text-align: center;
             font-size: 16px;
+            font-weight: 600;
             background-color: #0067B8;
             border: none;
             outline: none;
