@@ -12,6 +12,37 @@ body {
   margin-bottom: 95px;
 }
 
+.wwww {
+  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  display: flex;
+  position: relative;
+  height: 2127px;
+}
+
+.page {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  left: 100%;
+  visibility: hidden;
+}
+
+.d-none {
+  visibility: hidden;
+}
+
+.homepage {
+  visibility: visible;
+  left: 0;
+}
+
 .top {
   padding: 20px 25px 0 0;
   display: flex;

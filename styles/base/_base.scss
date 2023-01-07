@@ -11,3 +11,34 @@ body {
     position: relative;
     margin-bottom: 95px;
 }
+
+.wwww {
+    // display: flex;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.main-container {
+    display: flex;
+    position: relative;
+    height: 2127px;
+}
+
+.page {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    left: 100%;
+    visibility: hidden;
+}
+
+.d-none {
+    visibility: hidden;
+}
+
+.homepage{
+    visibility: visible;
+    left: 0;
+}
