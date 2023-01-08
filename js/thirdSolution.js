@@ -3,14 +3,20 @@ const h = $('body').height()
 
 let currNavId = 0;
 
-// $('.homepage').addClass('homepage')
-
 $('.single-nav').on('click', function(e) {
-    // $('.homepage').removeClass('homepage')
     let targetNavId = +$(this).data('navid')
 
+    let targetPageLeft = +$($('.page')[targetNavId]).css('left').split('p')[0]
     console.log(currNavId, targetNavId)
-    
+    console.log(targetPageLeft)
+
+    if(currNavId < targetNavId && targetPageLeft < 0){
+        $($('.page')[targetNavId]).css('left', '100%')
+    }
+    if(currNavId > targetNavId && targetPageLeft > 0){
+        $($('.page')[targetNavId]).css('left', '-100%')
+    }
+
     $('.page').each(function(id, val) {
         if(targetNavId == id) {
             $(this).animate({
