@@ -2,33 +2,36 @@ const w = $('body').width()
 const h = $('body').height()
 
 let currNavId = 0;
-let isNeg = true;
 
-$('.homepage').addClass('homepage')
+// $('.homepage').addClass('homepage')
 
 $('.single-nav').on('click', function(e) {
-    $('.homepage').removeClass('homepage')
+    // $('.homepage').removeClass('homepage')
     let targetNavId = +$(this).data('navid')
+
+    console.log(currNavId, targetNavId)
     
     $('.page').each(function(id, val) {
         if(targetNavId == id) {
             $(this).animate({
                 left: "0%",
                 opacity: 1,
-            }, 1000)
+            }, 500)
             $(this).css('visibility', 'visible')
         }
-
+        let makeLeft = targetNavId > currNavId ? "-100%" : "100%";
+        console.log(makeLeft)
         if(currNavId == id) {
             $(this).animate({
-                left: isNeg ? "100%" : "-100%",
-                opacity: 0
-            }, 1000, function() {
-                isNeg = +$(this).css('left').split('p')[0] < 0 ? true : false;
-            })
+                left: makeLeft,
+                opacity: 0.5
+            }, 500)
             // $(this).css('visibility', 'hidden')
         }
     })
+
+    $('.single-nav').removeClass('active')
+    $(this).addClass('active')
     
     currNavId = targetNavId;
 })
